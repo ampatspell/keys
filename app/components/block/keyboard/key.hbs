@@ -1,0 +1,12 @@
+<div
+  class={{class
+    'key'
+    white=@key.isWhite
+    black=@key.isBlack
+    highlighted=@highlighted
+  }}
+  {{on 'click' @onSelect}}
+  role="button"
+>
+  <div class="name">{{@key.name}}</div>
+</div>

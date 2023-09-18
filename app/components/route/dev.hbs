@@ -1,0 +1,15 @@
+<div class="route-dev">
+  <Block::Keyboard
+    @highlighted={{this.selection}}
+    @onSelect={{this.onSelectRoot}}
+  />
+
+  <div class="scale">
+    {{this.scale.name}}
+    {{#if this.root}}
+      {{this.root.name}}
+      scale
+    {{/if}}
+  </div>
+
+</div>

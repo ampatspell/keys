@@ -1,0 +1,13 @@
+<div class="block-keyboard" ...attributes>
+  {{#each this.keys.pairs as |pair|}}
+    <div class="pair">
+      {{#each pair as |key|}}
+        <Block::Keyboard::Key
+          @key={{key}}
+          @highlighted={{array-includes @highlighted key}}
+          @onSelect={{fn @onSelect key}}
+        />
+      {{/each}}
+    </div>
+  {{/each}}
+</div>
