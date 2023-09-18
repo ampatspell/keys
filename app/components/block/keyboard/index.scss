@@ -36,6 +36,9 @@
         > .name {
           background: lighten(#990000, 50%);
           color: #000;
+          transition:
+            0.15s ease-in-out color,
+            0.15s ease-in-out background-color;
         }
       }
       &.white {
