@@ -13,5 +13,4 @@ export default class BlockLayoutInstanceScalesComponent extends Component {
     layout.replaceInstanceScale(instance, scale);
     layout.transitionTo();
   }
-
 }
