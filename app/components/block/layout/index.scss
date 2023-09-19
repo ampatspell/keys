@@ -7,13 +7,13 @@
   > .instance {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
     > .header {
       display: flex;
       flex-direction: row;
       align-items: center;
       > .name {
-        font-size: 10px;
+        font-size: 11px;
         flex: 1;
       }
       > .accessories {
