@@ -4,10 +4,12 @@
     white=@key.isWhite
     black=@key.isBlack
     highlighted=@highlighted
-    root=@root
   }}
   {{on 'click' @onSelect}}
   role="button"
 >
+  {{#if @root}}
+    <div class="root"></div>
+  {{/if}}
   <div class="name">{{@key.name}}</div>
 </div>
