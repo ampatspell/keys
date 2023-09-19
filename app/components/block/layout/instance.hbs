@@ -9,8 +9,15 @@
       <div class="close" {{on 'click' this.onRemove}} role="button">×</div>
     </div>
   </div>
-  <Block::Keyboard
-    @highlighted={{this.selection}}
-    @onSelect={{this.onSelectKey}}
-  />
+  <div class="keyboards">
+    <Block::Keyboard
+      @root={{@instance.key}}
+      @highlighted={{this.selection}}
+      @onSelect={{this.onSelectKey}}
+    />
+    <Block::Keyboard
+      @highlighted={{this.selection}}
+      @onSelect={{this.onSelectKey}}
+    />
+  </div>
 </div>

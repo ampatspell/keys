@@ -24,7 +24,7 @@ export default class Scale extends Model {
       pattern,
     } = this;
 
-    let double = all;
+    let double = [...all, ...all];
     let base = all.indexOf(root);
     return pattern.map((index) => double[base + index]);
   }

@@ -4,6 +4,7 @@
       {{#each pair as |key|}}
         <Block::Keyboard::Key
           @key={{key}}
+          @root={{eq @root key}}
           @highlighted={{array-includes @highlighted key}}
           @onSelect={{fn @onSelect key}}
         />

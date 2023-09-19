@@ -53,6 +53,10 @@
         }
       }
     }
+    > .keyboards {
+      display: flex;
+      flex-direction: row;
+    }
   }
   > .add {
     cursor: pointer;

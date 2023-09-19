@@ -72,7 +72,6 @@ export default class Layout extends Model {
   }
 
   replaceInstanceKey(instance, key) {
-    key = this.keys.all.find((i) => i.name == key.name);
     instance.key = key;
   }
 

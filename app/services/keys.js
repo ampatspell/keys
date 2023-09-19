@@ -2,7 +2,7 @@ import Service, { inject as service } from '@ember/service';
 import { cached } from '@glimmer/tracking';
 import { lastObject } from '../utils/array';
 
-const octave = [
+const keys = [
   { name: 'C' },
   { name: 'C♯', black: true },
   { name: 'D' },
@@ -16,8 +16,6 @@ const octave = [
   { name: 'A♯', black: true },
   { name: 'B' },
 ];
-
-const keys = [...octave, ...octave];
 
 const scales = [
   { id: 'maj', name: 'Major', pattern: [0, 2, 4, 5, 7, 9, 11] },
