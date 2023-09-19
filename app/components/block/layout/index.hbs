@@ -1,0 +1,9 @@
+<div class="block-layout">
+  {{#each @layout.instances as |instance|}}
+    <Block::Layout::Instance
+      @layout={{@layout}}
+      @instance={{instance}}
+    />
+  {{/each}}
+  <div class="add" {{on 'click' this.onAdd}} role="button">+</div>
+</div>

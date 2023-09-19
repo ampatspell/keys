@@ -1,5 +1,6 @@
 import Model from './model';
 import { inject as service } from '@ember/service';
+import { reads } from 'macro-decorators';
 
 export default class Scale extends Model {
   @service keys;
@@ -9,13 +10,9 @@ export default class Scale extends Model {
     this.opts = opts;
   }
 
-  get name() {
-    return this.opts.name;
-  }
-
-  get pattern() {
-    return this.opts.pattern;
-  }
+  @reads('opts.id') id;
+  @reads('opts.name') name;
+  @reads('opts.pattern') pattern;
 
   select(root) {
     if (!root) {

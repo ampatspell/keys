@@ -1,0 +1,16 @@
+<div class="instance">
+  <div class="header">
+    <div class="name">{{@instance.key.name}} {{@instance.scale.name}} scale</div>
+    <div class="accessories">
+      <Block::Layout::Instance::Scales
+        @layout={{@layout}}
+        @instance={{@instance}}
+      />
+      <div class="close" {{on 'click' this.onRemove}} role="button">×</div>
+    </div>
+  </div>
+  <Block::Keyboard
+    @highlighted={{this.selection}}
+    @onSelect={{this.onSelectKey}}
+  />
+</div>

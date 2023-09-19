@@ -1,0 +1,12 @@
+<div class="scales">
+  {{#each this.keys.scales as |scale|}}
+    <div
+      class={{class
+        'scale'
+        selected=(eq scale @instance.scale)
+      }}
+      {{on 'click' (fn this.onSelect scale)}}
+      role="button"
+    >{{scale.name}}</div>
+  {{/each}}
+</div>

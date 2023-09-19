@@ -20,8 +20,8 @@ const octave = [
 const keys = [...octave, ...octave];
 
 const scales = [
-  { name: 'Major', pattern: [0, 2, 4, 5, 7, 9, 11] },
-  { name: 'Minor', pattern: [0, 2, 3, 5, 7, 8, 10] },
+  { id: 'maj', name: 'Major', pattern: [0, 2, 4, 5, 7, 9, 11] },
+  { id: 'min', name: 'Minor', pattern: [0, 2, 3, 5, 7, 8, 10] },
 ];
 
 export default class KeysService extends Service {
